@@ -57,7 +57,6 @@ for i in range(intervalos):
         print(i)
         if i == 0:
                 B[i] = h**2*(F-C)-(x_ini)
-                print(B)
         elif i == intervalos-1:
                 B[i] =  h**2*(F-C)-(x_fin)
         else:
