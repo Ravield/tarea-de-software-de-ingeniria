@@ -1,3 +1,5 @@
+import math 
+
 def funcion(x):
 	resultado=pow(x,3)+pow(x,2)+x+3
 	return resultado
@@ -14,13 +16,13 @@ def regresiva(x):
 	deri=(funcion(x)-funcion(x-h))/h
 	return deri
 def segundaDerivada (x):
-	deri=(funcion(x-h)-2funcion(x)+funcion(x-h))/(h²)
+	deri=((funcion(x-h)-2*funcion(x)+funcion(x-h))/h**2)
 	return deri
 
-int x=0
-int xfin=1
+x=0
+xfin=1
 intervalos=int(input("Ingrese cantidad de nodos internos"))
-float h=(1/intervalos)
+h = float(1/intervalos) 
 num_deri=int(input("Ingrese el tipo de derivada a usar"))
 print("Centrada=1")
 print("Progresiva=2")
